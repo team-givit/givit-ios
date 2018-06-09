@@ -6,7 +6,8 @@ target 'giVit' do
   use_frameworks!
 
   # Pods for giVit
-
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
 end
 
 target 'giVit WatchKit App' do
