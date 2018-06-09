@@ -11,8 +11,9 @@
 		6026C234666407111DDD98DB /* Pods_giVit_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08625AF286CE2C2463D61143 /* Pods_giVit_WatchKit_App.framework */; };
 		9A6620CDECE13B44653FE59F /* Pods_giVit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4CA107B59D32E48FCF8D56 /* Pods_giVit.framework */; };
 		FABEEC8620CC7612005527F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FABEEC8520CC7612005527F3 /* GoogleService-Info.plist */; };
+		FAFAE56320CC884F0005DCEC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFAE56220CC884F0005DCEC /* LoginViewController.swift */; };
 		FAFE3B2920CC6E270077612E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE3B2820CC6E270077612E /* AppDelegate.swift */; };
-		FAFE3B2B20CC6E270077612E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE3B2A20CC6E270077612E /* ViewController.swift */; };
+		FAFE3B2B20CC6E270077612E /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE3B2A20CC6E270077612E /* LoadingViewController.swift */; };
 		FAFE3B2E20CC6E270077612E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFE3B2C20CC6E270077612E /* Main.storyboard */; };
 		FAFE3B3020CC6E290077612E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFE3B2F20CC6E290077612E /* Assets.xcassets */; };
 		FAFE3B3320CC6E290077612E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFE3B3120CC6E290077612E /* LaunchScreen.storyboard */; };
@@ -78,9 +79,10 @@
 		8B4CA107B59D32E48FCF8D56 /* Pods_giVit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_giVit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF5E4C56E0CCD7C303B79B0 /* Pods-giVit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giVit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-giVit/Pods-giVit.debug.xcconfig"; sourceTree = "<group>"; };
 		FABEEC8520CC7612005527F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FAFAE56220CC884F0005DCEC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FAFE3B2520CC6E270077612E /* giVit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = giVit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFE3B2820CC6E270077612E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAFE3B2A20CC6E270077612E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAFE3B2A20CC6E270077612E /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		FAFE3B2D20CC6E270077612E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAFE3B2F20CC6E290077612E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAFE3B3220CC6E290077612E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -150,6 +152,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FAFAE56120CC79840005DCEC /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FAFE3B2A20CC6E270077612E /* LoadingViewController.swift */,
+				FAFAE56220CC884F0005DCEC /* LoginViewController.swift */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
 		FAFE3B1C20CC6E260077612E = {
 			isa = PBXGroup;
 			children = (
@@ -177,7 +188,7 @@
 			children = (
 				FABEEC8520CC7612005527F3 /* GoogleService-Info.plist */,
 				FAFE3B2820CC6E270077612E /* AppDelegate.swift */,
-				FAFE3B2A20CC6E270077612E /* ViewController.swift */,
+				FAFAE56120CC79840005DCEC /* Screens */,
 				FAFE3B2C20CC6E270077612E /* Main.storyboard */,
 				FAFE3B2F20CC6E290077612E /* Assets.xcassets */,
 				FAFE3B3120CC6E290077612E /* LaunchScreen.storyboard */,
@@ -426,7 +437,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAFE3B2B20CC6E270077612E /* ViewController.swift in Sources */,
+				FAFAE56320CC884F0005DCEC /* LoginViewController.swift in Sources */,
+				FAFE3B2B20CC6E270077612E /* LoadingViewController.swift in Sources */,
 				FAFE3B2920CC6E270077612E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
