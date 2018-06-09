@@ -10,6 +10,7 @@
 		202C859AE67F88D32ED78C0C /* Pods_giVit_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B325A53A7FFB99733D8743 /* Pods_giVit_WatchKit_Extension.framework */; };
 		6026C234666407111DDD98DB /* Pods_giVit_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08625AF286CE2C2463D61143 /* Pods_giVit_WatchKit_App.framework */; };
 		9A6620CDECE13B44653FE59F /* Pods_giVit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4CA107B59D32E48FCF8D56 /* Pods_giVit.framework */; };
+		FABEEC8620CC7612005527F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FABEEC8520CC7612005527F3 /* GoogleService-Info.plist */; };
 		FAFE3B2920CC6E270077612E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE3B2820CC6E270077612E /* AppDelegate.swift */; };
 		FAFE3B2B20CC6E270077612E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE3B2A20CC6E270077612E /* ViewController.swift */; };
 		FAFE3B2E20CC6E270077612E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFE3B2C20CC6E270077612E /* Main.storyboard */; };
@@ -76,6 +77,7 @@
 		7E3ABAE24B7BE9E978FB6049 /* Pods-giVit WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giVit WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-giVit WatchKit Extension/Pods-giVit WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		8B4CA107B59D32E48FCF8D56 /* Pods_giVit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_giVit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF5E4C56E0CCD7C303B79B0 /* Pods-giVit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giVit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-giVit/Pods-giVit.debug.xcconfig"; sourceTree = "<group>"; };
+		FABEEC8520CC7612005527F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FAFE3B2520CC6E270077612E /* giVit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = giVit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFE3B2820CC6E270077612E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAFE3B2A20CC6E270077612E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 		FAFE3B2720CC6E270077612E /* giVit */ = {
 			isa = PBXGroup;
 			children = (
+				FABEEC8520CC7612005527F3 /* GoogleService-Info.plist */,
 				FAFE3B2820CC6E270077612E /* AppDelegate.swift */,
 				FAFE3B2A20CC6E270077612E /* ViewController.swift */,
 				FAFE3B2C20CC6E270077612E /* Main.storyboard */,
@@ -313,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAFE3B3320CC6E290077612E /* LaunchScreen.storyboard in Resources */,
+				FABEEC8620CC7612005527F3 /* GoogleService-Info.plist in Resources */,
 				FAFE3B3020CC6E290077612E /* Assets.xcassets in Resources */,
 				FAFE3B2E20CC6E270077612E /* Main.storyboard in Resources */,
 			);

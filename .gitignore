@@ -6,6 +6,9 @@
 Pods/
 givit.xcworkspace
 
+## Google stuff
+GoogleService-Info.plist
+
 ## Build generated
 build/
 DerivedData/
