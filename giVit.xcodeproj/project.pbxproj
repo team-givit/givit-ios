@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAFE3B2920CC6E270077612E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE3B2820CC6E270077612E /* AppDelegate.swift */; };
+		FAFE3B2B20CC6E270077612E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE3B2A20CC6E270077612E /* ViewController.swift */; };
+		FAFE3B2E20CC6E270077612E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFE3B2C20CC6E270077612E /* Main.storyboard */; };
+		FAFE3B3020CC6E290077612E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFE3B2F20CC6E290077612E /* Assets.xcassets */; };
+		FAFE3B3320CC6E290077612E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFE3B3120CC6E290077612E /* LaunchScreen.storyboard */; };
+		FAFE3B3820CC6E290077612E /* giVit WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FAFE3B3720CC6E290077612E /* giVit WatchKit App.app */; };
+		FAFE3B3E20CC6E290077612E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFE3B3C20CC6E290077612E /* Interface.storyboard */; };
+		FAFE3B4020CC6E290077612E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFE3B3F20CC6E290077612E /* Assets.xcassets */; };
+		FAFE3B4720CC6E290077612E /* giVit WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FAFE3B4620CC6E290077612E /* giVit WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FAFE3B4C20CC6E290077612E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE3B4B20CC6E290077612E /* InterfaceController.swift */; };
+		FAFE3B4E20CC6E290077612E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE3B4D20CC6E290077612E /* ExtensionDelegate.swift */; };
+		FAFE3B5020CC6E290077612E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE3B4F20CC6E290077612E /* NotificationController.swift */; };
+		FAFE3B5220CC6E2A0077612E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFE3B5120CC6E2A0077612E /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAFE3B3920CC6E290077612E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAFE3B1D20CC6E270077612E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAFE3B3620CC6E290077612E;
+			remoteInfo = "giVit WatchKit App";
+		};
+		FAFE3B4820CC6E290077612E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAFE3B1D20CC6E270077612E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAFE3B4520CC6E290077612E;
+			remoteInfo = "giVit WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FAFE3B5A20CC6E2A0077612E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FAFE3B4720CC6E290077612E /* giVit WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFE3B5E20CC6E2A0077612E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FAFE3B3820CC6E290077612E /* giVit WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FAFE3B2520CC6E270077612E /* giVit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = giVit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFE3B2820CC6E270077612E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAFE3B2A20CC6E270077612E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAFE3B2D20CC6E270077612E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAFE3B2F20CC6E290077612E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAFE3B3220CC6E290077612E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAFE3B3420CC6E290077612E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFE3B3720CC6E290077612E /* giVit WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "giVit WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFE3B3D20CC6E290077612E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		FAFE3B3F20CC6E290077612E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAFE3B4120CC6E290077612E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFE3B4620CC6E290077612E /* giVit WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "giVit WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFE3B4B20CC6E290077612E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		FAFE3B4D20CC6E290077612E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		FAFE3B4F20CC6E290077612E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		FAFE3B5120CC6E2A0077612E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAFE3B5320CC6E2A0077612E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFE3B5420CC6E2A0077612E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAFE3B2220CC6E270077612E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFE3B4320CC6E290077612E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAFE3B1C20CC6E260077612E = {
+			isa = PBXGroup;
+			children = (
+				FAFE3B2720CC6E270077612E /* giVit */,
+				FAFE3B3B20CC6E290077612E /* giVit WatchKit App */,
+				FAFE3B4A20CC6E290077612E /* giVit WatchKit Extension */,
+				FAFE3B2620CC6E270077612E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAFE3B2620CC6E270077612E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAFE3B2520CC6E270077612E /* giVit.app */,
+				FAFE3B3720CC6E290077612E /* giVit WatchKit App.app */,
+				FAFE3B4620CC6E290077612E /* giVit WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAFE3B2720CC6E270077612E /* giVit */ = {
+			isa = PBXGroup;
+			children = (
+				FAFE3B2820CC6E270077612E /* AppDelegate.swift */,
+				FAFE3B2A20CC6E270077612E /* ViewController.swift */,
+				FAFE3B2C20CC6E270077612E /* Main.storyboard */,
+				FAFE3B2F20CC6E290077612E /* Assets.xcassets */,
+				FAFE3B3120CC6E290077612E /* LaunchScreen.storyboard */,
+				FAFE3B3420CC6E290077612E /* Info.plist */,
+			);
+			path = giVit;
+			sourceTree = "<group>";
+		};
+		FAFE3B3B20CC6E290077612E /* giVit WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				FAFE3B3C20CC6E290077612E /* Interface.storyboard */,
+				FAFE3B3F20CC6E290077612E /* Assets.xcassets */,
+				FAFE3B4120CC6E290077612E /* Info.plist */,
+			);
+			path = "giVit WatchKit App";
+			sourceTree = "<group>";
+		};
+		FAFE3B4A20CC6E290077612E /* giVit WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FAFE3B4B20CC6E290077612E /* InterfaceController.swift */,
+				FAFE3B4D20CC6E290077612E /* ExtensionDelegate.swift */,
+				FAFE3B4F20CC6E290077612E /* NotificationController.swift */,
+				FAFE3B5120CC6E2A0077612E /* Assets.xcassets */,
+				FAFE3B5320CC6E2A0077612E /* Info.plist */,
+				FAFE3B5420CC6E2A0077612E /* PushNotificationPayload.apns */,
+			);
+			path = "giVit WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAFE3B2420CC6E270077612E /* giVit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFE3B5F20CC6E2A0077612E /* Build configuration list for PBXNativeTarget "giVit" */;
+			buildPhases = (
+				FAFE3B2120CC6E270077612E /* Sources */,
+				FAFE3B2220CC6E270077612E /* Frameworks */,
+				FAFE3B2320CC6E270077612E /* Resources */,
+				FAFE3B5E20CC6E2A0077612E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAFE3B3A20CC6E290077612E /* PBXTargetDependency */,
+			);
+			name = giVit;
+			productName = giVit;
+			productReference = FAFE3B2520CC6E270077612E /* giVit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAFE3B3620CC6E290077612E /* giVit WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFE3B5B20CC6E2A0077612E /* Build configuration list for PBXNativeTarget "giVit WatchKit App" */;
+			buildPhases = (
+				FAFE3B3520CC6E290077612E /* Resources */,
+				FAFE3B5A20CC6E2A0077612E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAFE3B4920CC6E290077612E /* PBXTargetDependency */,
+			);
+			name = "giVit WatchKit App";
+			productName = "giVit WatchKit App";
+			productReference = FAFE3B3720CC6E290077612E /* giVit WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FAFE3B4520CC6E290077612E /* giVit WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFE3B5720CC6E2A0077612E /* Build configuration list for PBXNativeTarget "giVit WatchKit Extension" */;
+			buildPhases = (
+				FAFE3B4220CC6E290077612E /* Sources */,
+				FAFE3B4320CC6E290077612E /* Frameworks */,
+				FAFE3B4420CC6E290077612E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "giVit WatchKit Extension";
+			productName = "giVit WatchKit Extension";
+			productReference = FAFE3B4620CC6E290077612E /* giVit WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAFE3B1D20CC6E270077612E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = EnggMomo;
+				TargetAttributes = {
+					FAFE3B2420CC6E270077612E = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					FAFE3B3620CC6E290077612E = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					FAFE3B4520CC6E290077612E = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = FAFE3B2020CC6E270077612E /* Build configuration list for PBXProject "giVit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAFE3B1C20CC6E260077612E;
+			productRefGroup = FAFE3B2620CC6E270077612E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAFE3B2420CC6E270077612E /* giVit */,
+				FAFE3B3620CC6E290077612E /* giVit WatchKit App */,
+				FAFE3B4520CC6E290077612E /* giVit WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAFE3B2320CC6E270077612E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFE3B3320CC6E290077612E /* LaunchScreen.storyboard in Resources */,
+				FAFE3B3020CC6E290077612E /* Assets.xcassets in Resources */,
+				FAFE3B2E20CC6E270077612E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFE3B3520CC6E290077612E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFE3B4020CC6E290077612E /* Assets.xcassets in Resources */,
+				FAFE3B3E20CC6E290077612E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFE3B4420CC6E290077612E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFE3B5220CC6E2A0077612E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAFE3B2120CC6E270077612E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFE3B2B20CC6E270077612E /* ViewController.swift in Sources */,
+				FAFE3B2920CC6E270077612E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFE3B4220CC6E290077612E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFE3B5020CC6E290077612E /* NotificationController.swift in Sources */,
+				FAFE3B4E20CC6E290077612E /* ExtensionDelegate.swift in Sources */,
+				FAFE3B4C20CC6E290077612E /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAFE3B3A20CC6E290077612E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAFE3B3620CC6E290077612E /* giVit WatchKit App */;
+			targetProxy = FAFE3B3920CC6E290077612E /* PBXContainerItemProxy */;
+		};
+		FAFE3B4920CC6E290077612E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAFE3B4520CC6E290077612E /* giVit WatchKit Extension */;
+			targetProxy = FAFE3B4820CC6E290077612E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAFE3B2C20CC6E270077612E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAFE3B2D20CC6E270077612E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAFE3B3120CC6E290077612E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAFE3B3220CC6E290077612E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FAFE3B3C20CC6E290077612E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAFE3B3D20CC6E290077612E /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAFE3B5520CC6E2A0077612E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAFE3B5620CC6E2A0077612E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAFE3B5820CC6E2A0077612E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9RRMC8U5VD;
+				INFOPLIST_FILE = "giVit WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.givit.giVit.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		FAFE3B5920CC6E2A0077612E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9RRMC8U5VD;
+				INFOPLIST_FILE = "giVit WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.givit.giVit.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		FAFE3B5C20CC6E2A0077612E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9RRMC8U5VD;
+				IBSC_MODULE = giVit_WatchKit_Extension;
+				INFOPLIST_FILE = "giVit WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = app.givit.giVit.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		FAFE3B5D20CC6E2A0077612E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9RRMC8U5VD;
+				IBSC_MODULE = giVit_WatchKit_Extension;
+				INFOPLIST_FILE = "giVit WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = app.givit.giVit.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		FAFE3B6020CC6E2A0077612E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9RRMC8U5VD;
+				INFOPLIST_FILE = giVit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.givit.giVit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAFE3B6120CC6E2A0077612E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9RRMC8U5VD;
+				INFOPLIST_FILE = giVit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.givit.giVit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAFE3B2020CC6E270077612E /* Build configuration list for PBXProject "giVit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFE3B5520CC6E2A0077612E /* Debug */,
+				FAFE3B5620CC6E2A0077612E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAFE3B5720CC6E2A0077612E /* Build configuration list for PBXNativeTarget "giVit WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFE3B5820CC6E2A0077612E /* Debug */,
+				FAFE3B5920CC6E2A0077612E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAFE3B5B20CC6E2A0077612E /* Build configuration list for PBXNativeTarget "giVit WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFE3B5C20CC6E2A0077612E /* Debug */,
+				FAFE3B5D20CC6E2A0077612E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAFE3B5F20CC6E2A0077612E /* Build configuration list for PBXNativeTarget "giVit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFE3B6020CC6E2A0077612E /* Debug */,
+				FAFE3B6120CC6E2A0077612E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAFE3B1D20CC6E270077612E /* Project object */;
+}
