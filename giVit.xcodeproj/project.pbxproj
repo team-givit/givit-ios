@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		202C859AE67F88D32ED78C0C /* Pods_giVit_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B325A53A7FFB99733D8743 /* Pods_giVit_WatchKit_Extension.framework */; };
+		6026C234666407111DDD98DB /* Pods_giVit_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08625AF286CE2C2463D61143 /* Pods_giVit_WatchKit_App.framework */; };
+		9A6620CDECE13B44653FE59F /* Pods_giVit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4CA107B59D32E48FCF8D56 /* Pods_giVit.framework */; };
 		FAFE3B2920CC6E270077612E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE3B2820CC6E270077612E /* AppDelegate.swift */; };
 		FAFE3B2B20CC6E270077612E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE3B2A20CC6E270077612E /* ViewController.swift */; };
 		FAFE3B2E20CC6E270077612E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFE3B2C20CC6E270077612E /* Main.storyboard */; };
@@ -65,6 +68,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		07AC350514DA62028E0813DC /* Pods-giVit WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giVit WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-giVit WatchKit App/Pods-giVit WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		08625AF286CE2C2463D61143 /* Pods_giVit_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_giVit_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2822D20473344B8C2F2F2C3E /* Pods-giVit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giVit.release.xcconfig"; path = "Pods/Target Support Files/Pods-giVit/Pods-giVit.release.xcconfig"; sourceTree = "<group>"; };
+		36B325A53A7FFB99733D8743 /* Pods_giVit_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_giVit_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79F8305D1CBF40F2EE4127C0 /* Pods-giVit WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giVit WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-giVit WatchKit Extension/Pods-giVit WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		7E3ABAE24B7BE9E978FB6049 /* Pods-giVit WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giVit WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-giVit WatchKit Extension/Pods-giVit WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		8B4CA107B59D32E48FCF8D56 /* Pods_giVit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_giVit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FF5E4C56E0CCD7C303B79B0 /* Pods-giVit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giVit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-giVit/Pods-giVit.debug.xcconfig"; sourceTree = "<group>"; };
 		FAFE3B2520CC6E270077612E /* giVit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = giVit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFE3B2820CC6E270077612E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAFE3B2A20CC6E270077612E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,13 +94,23 @@
 		FAFE3B5120CC6E2A0077612E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAFE3B5320CC6E2A0077612E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAFE3B5420CC6E2A0077612E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		FD3C0011BE6C21FD651957EB /* Pods-giVit WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giVit WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-giVit WatchKit App/Pods-giVit WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EEDDFB606206548BA1ACE147 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6026C234666407111DDD98DB /* Pods_giVit_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAFE3B2220CC6E270077612E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A6620CDECE13B44653FE59F /* Pods_giVit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,12 +118,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				202C859AE67F88D32ED78C0C /* Pods_giVit_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20CFD4F5653F91FBB64CD503 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B4CA107B59D32E48FCF8D56 /* Pods_giVit.framework */,
+				08625AF286CE2C2463D61143 /* Pods_giVit_WatchKit_App.framework */,
+				36B325A53A7FFB99733D8743 /* Pods_giVit_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55E3F5C1E1A80AE619808094 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FF5E4C56E0CCD7C303B79B0 /* Pods-giVit.debug.xcconfig */,
+				2822D20473344B8C2F2F2C3E /* Pods-giVit.release.xcconfig */,
+				07AC350514DA62028E0813DC /* Pods-giVit WatchKit App.debug.xcconfig */,
+				FD3C0011BE6C21FD651957EB /* Pods-giVit WatchKit App.release.xcconfig */,
+				7E3ABAE24B7BE9E978FB6049 /* Pods-giVit WatchKit Extension.debug.xcconfig */,
+				79F8305D1CBF40F2EE4127C0 /* Pods-giVit WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FAFE3B1C20CC6E260077612E = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +155,8 @@
 				FAFE3B3B20CC6E290077612E /* giVit WatchKit App */,
 				FAFE3B4A20CC6E290077612E /* giVit WatchKit Extension */,
 				FAFE3B2620CC6E270077612E /* Products */,
+				55E3F5C1E1A80AE619808094 /* Pods */,
+				20CFD4F5653F91FBB64CD503 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAFE3B5F20CC6E2A0077612E /* Build configuration list for PBXNativeTarget "giVit" */;
 			buildPhases = (
+				8BC244508381238466AC2E23 /* [CP] Check Pods Manifest.lock */,
 				FAFE3B2120CC6E270077612E /* Sources */,
 				FAFE3B2220CC6E270077612E /* Frameworks */,
 				FAFE3B2320CC6E270077612E /* Resources */,
@@ -185,8 +233,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAFE3B5B20CC6E2A0077612E /* Build configuration list for PBXNativeTarget "giVit WatchKit App" */;
 			buildPhases = (
+				FC01DDF3A69207797E7FEFEA /* [CP] Check Pods Manifest.lock */,
 				FAFE3B3520CC6E290077612E /* Resources */,
 				FAFE3B5A20CC6E2A0077612E /* Embed App Extensions */,
+				EEDDFB606206548BA1ACE147 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,6 +252,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAFE3B5720CC6E2A0077612E /* Build configuration list for PBXNativeTarget "giVit WatchKit Extension" */;
 			buildPhases = (
+				FC0F0AEA5FECC929C1AAE051 /* [CP] Check Pods Manifest.lock */,
 				FAFE3B4220CC6E290077612E /* Sources */,
 				FAFE3B4320CC6E290077612E /* Frameworks */,
 				FAFE3B4420CC6E290077612E /* Resources */,
@@ -285,6 +336,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8BC244508381238466AC2E23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-giVit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC01DDF3A69207797E7FEFEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-giVit WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC0F0AEA5FECC929C1AAE051 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-giVit WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAFE3B2120CC6E270077612E /* Sources */ = {
@@ -465,6 +573,7 @@
 		};
 		FAFE3B5820CC6E2A0077612E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E3ABAE24B7BE9E978FB6049 /* Pods-giVit WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -487,6 +596,7 @@
 		};
 		FAFE3B5920CC6E2A0077612E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79F8305D1CBF40F2EE4127C0 /* Pods-giVit WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -509,6 +619,7 @@
 		};
 		FAFE3B5C20CC6E2A0077612E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07AC350514DA62028E0813DC /* Pods-giVit WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -528,6 +639,7 @@
 		};
 		FAFE3B5D20CC6E2A0077612E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD3C0011BE6C21FD651957EB /* Pods-giVit WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -547,6 +659,7 @@
 		};
 		FAFE3B6020CC6E2A0077612E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FF5E4C56E0CCD7C303B79B0 /* Pods-giVit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -565,6 +678,7 @@
 		};
 		FAFE3B6120CC6E2A0077612E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2822D20473344B8C2F2F2C3E /* Pods-giVit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
