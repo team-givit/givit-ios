@@ -10,6 +10,8 @@
 		202C859AE67F88D32ED78C0C /* Pods_giVit_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B325A53A7FFB99733D8743 /* Pods_giVit_WatchKit_Extension.framework */; };
 		6026C234666407111DDD98DB /* Pods_giVit_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08625AF286CE2C2463D61143 /* Pods_giVit_WatchKit_App.framework */; };
 		9A6620CDECE13B44653FE59F /* Pods_giVit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4CA107B59D32E48FCF8D56 /* Pods_giVit.framework */; };
+		FA115A1C20D61B91008D7C2B /* CustomInputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA115A1B20D61B91008D7C2B /* CustomInputTextField.swift */; };
+		FA115A1E20D64E51008D7C2B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA115A1D20D64E51008D7C2B /* SignUpViewController.swift */; };
 		FAAC748120D5B8E5005B22A0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC748020D5B8E5005B22A0 /* Extensions.swift */; };
 		FAAC748420D5BC4E005B22A0 /* CustomFullWidthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC748320D5BC4E005B22A0 /* CustomFullWidthButton.swift */; };
 		FABEEC8620CC7612005527F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FABEEC8520CC7612005527F3 /* GoogleService-Info.plist */; };
@@ -80,6 +82,8 @@
 		7E3ABAE24B7BE9E978FB6049 /* Pods-giVit WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giVit WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-giVit WatchKit Extension/Pods-giVit WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		8B4CA107B59D32E48FCF8D56 /* Pods_giVit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_giVit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF5E4C56E0CCD7C303B79B0 /* Pods-giVit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giVit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-giVit/Pods-giVit.debug.xcconfig"; sourceTree = "<group>"; };
+		FA115A1B20D61B91008D7C2B /* CustomInputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputTextField.swift; sourceTree = "<group>"; };
+		FA115A1D20D64E51008D7C2B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FAAC748020D5B8E5005B22A0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FAAC748320D5BC4E005B22A0 /* CustomFullWidthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFullWidthButton.swift; sourceTree = "<group>"; };
 		FABEEC8520CC7612005527F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				FAAC748320D5BC4E005B22A0 /* CustomFullWidthButton.swift */,
+				FA115A1B20D61B91008D7C2B /* CustomInputTextField.swift */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 			children = (
 				FAFE3B2A20CC6E270077612E /* LoadingViewController.swift */,
 				FAFAE56220CC884F0005DCEC /* LoginViewController.swift */,
+				FA115A1D20D64E51008D7C2B /* SignUpViewController.swift */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -460,6 +466,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAFAE56320CC884F0005DCEC /* LoginViewController.swift in Sources */,
+				FA115A1E20D64E51008D7C2B /* SignUpViewController.swift in Sources */,
+				FA115A1C20D61B91008D7C2B /* CustomInputTextField.swift in Sources */,
 				FAFE3B2B20CC6E270077612E /* LoadingViewController.swift in Sources */,
 				FAAC748420D5BC4E005B22A0 /* CustomFullWidthButton.swift in Sources */,
 				FAFE3B2920CC6E270077612E /* AppDelegate.swift in Sources */,

@@ -13,9 +13,12 @@ class LoginViewController : UIViewController {
     
     @IBOutlet weak var LoginButton: CustomFullWidthButton!
     
-    override func viewDidLoad() {
+    func styleView(){
         self.view.backgroundColor = UIColor(hex: 0x454545)
-        print(self.LoginButton.frame.minY)
+    }
+    
+    func addFunctionality(){
+        self.hideKeyboardWhenTappedAround()
         self.LoginButton.setupButton(
             sender: self,
             y: self.LoginButton.frame.minY,
@@ -28,15 +31,24 @@ class LoginViewController : UIViewController {
                 Auth.auth().signIn(
                     withEmail: self.emailTextField.text!,
                     password: self.passwordTextField.text!,
-                    completion: {(user, error) in
+                    completion:
+                    {
+                        (user, error) in
                         print("Button Level 2")
                         print(user)
                         print(error)
-                })
-        })
+                    }
+                )
+            }
+        )
     }
     
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
+    override func viewDidLoad() {
+        self.styleView()
+        self.addFunctionality()
+    }
+    
+    @IBOutlet weak var emailTextField: CustomInputTextField!
+    @IBOutlet weak var passwordTextField: CustomInputTextField!
     
 }
