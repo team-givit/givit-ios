@@ -4,7 +4,7 @@
 
 ## iOS shtuff
 Pods/
-givit.xcworkspace
+#givit.xcworkspace
 
 ## Google stuff
 GoogleService-Info.plist
