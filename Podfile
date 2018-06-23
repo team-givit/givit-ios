@@ -8,6 +8,8 @@ target 'giVit' do
   # Pods for giVit
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'AppCenter'
+  
 end
 
 target 'giVit WatchKit App' do
