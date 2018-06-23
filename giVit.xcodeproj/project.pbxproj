@@ -733,7 +733,8 @@
 			baseConfigurationReference = 9FF5E4C56E0CCD7C303B79B0 /* Pods-giVit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 9RRMC8U5VD;
 				INFOPLIST_FILE = giVit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -743,6 +744,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = app.givit.giVit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "01d1e66b-ba31-44c1-b07f-515d7edac4aa";
+				PROVISIONING_PROFILE_SPECIFIER = givit;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -753,7 +756,8 @@
 			baseConfigurationReference = 2822D20473344B8C2F2F2C3E /* Pods-giVit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 9RRMC8U5VD;
 				INFOPLIST_FILE = giVit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -763,6 +767,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = app.givit.giVit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f54a7e57-9cb7-4fb5-845f-e1fd84b43a75";
+				PROVISIONING_PROFILE_SPECIFIER = givit;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
