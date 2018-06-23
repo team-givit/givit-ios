@@ -28,7 +28,11 @@ class CustomInputTextField : UITextField {
         self.backgroundColor = UIColor.clear
         self.tintColor = UIColor.white
         self.textColor = UIColor.white
-        self.attributedPlaceholder = NSAttributedString(string: self.placeholder! ,attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
+        if (self.placeholder != nil){
+            self.attributedPlaceholder = NSAttributedString(string: self.placeholder! ,attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
+        }else{
+            self.attributedPlaceholder = NSAttributedString(string: "" ,attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
+        }
         self.borderStyle = UITextBorderStyle(rawValue: 0)!
         
         let border = CALayer()

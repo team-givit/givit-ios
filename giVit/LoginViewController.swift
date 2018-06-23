@@ -10,11 +10,21 @@ import UIKit
 import Firebase
 
 class LoginViewController : UIViewController {
-    
     @IBOutlet weak var LoginButton: CustomFullWidthButton!
+    @IBOutlet weak var emailTextField: CustomInputTextField!
+    @IBOutlet weak var passwordTextField: CustomInputTextField!
+    
+    override func viewDidLoad() {
+        self.styleView()
+        self.addFunctionality()
+    }
     
     func styleView(){
         self.view.backgroundColor = UIColor(hex: 0x454545)
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
     
     func addFunctionality(){
@@ -42,13 +52,5 @@ class LoginViewController : UIViewController {
             }
         )
     }
-    
-    override func viewDidLoad() {
-        self.styleView()
-        self.addFunctionality()
-    }
-    
-    @IBOutlet weak var emailTextField: CustomInputTextField!
-    @IBOutlet weak var passwordTextField: CustomInputTextField!
     
 }
