@@ -7,7 +7,7 @@ Pods/
 #givit.xcworkspace
 
 ## Google stuff
-GoogleService-Info.plist
+#GoogleService-Info.plist
 
 ## Build generated
 build/
