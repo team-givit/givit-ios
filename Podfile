@@ -11,19 +11,3 @@ target 'giVit' do
   pod 'AppCenter'
   
 end
-
-target 'giVit WatchKit App' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for giVit WatchKit App
-
-end
-
-target 'giVit WatchKit Extension' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for giVit WatchKit Extension
-
-end
