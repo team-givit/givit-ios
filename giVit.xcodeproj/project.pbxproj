@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		202C859AE67F88D32ED78C0C /* Pods_giVit_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B325A53A7FFB99733D8743 /* Pods_giVit_WatchKit_Extension.framework */; };
-		6026C234666407111DDD98DB /* Pods_giVit_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08625AF286CE2C2463D61143 /* Pods_giVit_WatchKit_App.framework */; };
 		9A6620CDECE13B44653FE59F /* Pods_giVit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4CA107B59D32E48FCF8D56 /* Pods_giVit.framework */; };
 		FA115A1C20D61B91008D7C2B /* CustomInputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA115A1B20D61B91008D7C2B /* CustomInputTextField.swift */; };
 		FA115A1E20D64E51008D7C2B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA115A1D20D64E51008D7C2B /* SignUpViewController.swift */; };
@@ -21,52 +19,15 @@
 		FAFE3B2E20CC6E270077612E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFE3B2C20CC6E270077612E /* Main.storyboard */; };
 		FAFE3B3020CC6E290077612E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFE3B2F20CC6E290077612E /* Assets.xcassets */; };
 		FAFE3B3320CC6E290077612E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFE3B3120CC6E290077612E /* LaunchScreen.storyboard */; };
-		FAFE3B3820CC6E290077612E /* giVit WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FAFE3B3720CC6E290077612E /* giVit WatchKit App.app */; };
-		FAFE3B3E20CC6E290077612E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFE3B3C20CC6E290077612E /* Interface.storyboard */; };
-		FAFE3B4020CC6E290077612E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFE3B3F20CC6E290077612E /* Assets.xcassets */; };
-		FAFE3B4720CC6E290077612E /* giVit WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FAFE3B4620CC6E290077612E /* giVit WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		FAFE3B4C20CC6E290077612E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE3B4B20CC6E290077612E /* InterfaceController.swift */; };
-		FAFE3B4E20CC6E290077612E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE3B4D20CC6E290077612E /* ExtensionDelegate.swift */; };
-		FAFE3B5020CC6E290077612E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE3B4F20CC6E290077612E /* NotificationController.swift */; };
-		FAFE3B5220CC6E2A0077612E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFE3B5120CC6E2A0077612E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		FAFE3B3920CC6E290077612E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FAFE3B1D20CC6E270077612E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FAFE3B3620CC6E290077612E;
-			remoteInfo = "giVit WatchKit App";
-		};
-		FAFE3B4820CC6E290077612E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FAFE3B1D20CC6E270077612E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FAFE3B4520CC6E290077612E;
-			remoteInfo = "giVit WatchKit Extension";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
-		FAFE3B5A20CC6E2A0077612E /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				FAFE3B4720CC6E290077612E /* giVit WatchKit Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FAFE3B5E20CC6E2A0077612E /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				FAFE3B3820CC6E290077612E /* giVit WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,42 +56,15 @@
 		FAFE3B2F20CC6E290077612E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAFE3B3220CC6E290077612E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAFE3B3420CC6E290077612E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAFE3B3720CC6E290077612E /* giVit WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "giVit WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAFE3B3D20CC6E290077612E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		FAFE3B3F20CC6E290077612E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FAFE3B4120CC6E290077612E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAFE3B4620CC6E290077612E /* giVit WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "giVit WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAFE3B4B20CC6E290077612E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		FAFE3B4D20CC6E290077612E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		FAFE3B4F20CC6E290077612E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		FAFE3B5120CC6E2A0077612E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FAFE3B5320CC6E2A0077612E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAFE3B5420CC6E2A0077612E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		FD3C0011BE6C21FD651957EB /* Pods-giVit WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giVit WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-giVit WatchKit App/Pods-giVit WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EEDDFB606206548BA1ACE147 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6026C234666407111DDD98DB /* Pods_giVit_WatchKit_App.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FAFE3B2220CC6E270077612E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9A6620CDECE13B44653FE59F /* Pods_giVit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAFE3B4320CC6E290077612E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				202C859AE67F88D32ED78C0C /* Pods_giVit_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,8 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				FAFE3B2720CC6E270077612E /* giVit */,
-				FAFE3B3B20CC6E290077612E /* giVit WatchKit App */,
-				FAFE3B4A20CC6E290077612E /* giVit WatchKit Extension */,
 				FAFE3B2620CC6E270077612E /* Products */,
 				55E3F5C1E1A80AE619808094 /* Pods */,
 				20CFD4F5653F91FBB64CD503 /* Frameworks */,
@@ -203,8 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				FAFE3B2520CC6E270077612E /* giVit.app */,
-				FAFE3B3720CC6E290077612E /* giVit WatchKit App.app */,
-				FAFE3B4620CC6E290077612E /* giVit WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -225,29 +155,6 @@
 			path = giVit;
 			sourceTree = "<group>";
 		};
-		FAFE3B3B20CC6E290077612E /* giVit WatchKit App */ = {
-			isa = PBXGroup;
-			children = (
-				FAFE3B3C20CC6E290077612E /* Interface.storyboard */,
-				FAFE3B3F20CC6E290077612E /* Assets.xcassets */,
-				FAFE3B4120CC6E290077612E /* Info.plist */,
-			);
-			path = "giVit WatchKit App";
-			sourceTree = "<group>";
-		};
-		FAFE3B4A20CC6E290077612E /* giVit WatchKit Extension */ = {
-			isa = PBXGroup;
-			children = (
-				FAFE3B4B20CC6E290077612E /* InterfaceController.swift */,
-				FAFE3B4D20CC6E290077612E /* ExtensionDelegate.swift */,
-				FAFE3B4F20CC6E290077612E /* NotificationController.swift */,
-				FAFE3B5120CC6E2A0077612E /* Assets.xcassets */,
-				FAFE3B5320CC6E2A0077612E /* Info.plist */,
-				FAFE3B5420CC6E2A0077612E /* PushNotificationPayload.apns */,
-			);
-			path = "giVit WatchKit Extension";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,49 +172,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				FAFE3B3A20CC6E290077612E /* PBXTargetDependency */,
 			);
 			name = giVit;
 			productName = giVit;
 			productReference = FAFE3B2520CC6E270077612E /* giVit.app */;
 			productType = "com.apple.product-type.application";
-		};
-		FAFE3B3620CC6E290077612E /* giVit WatchKit App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FAFE3B5B20CC6E2A0077612E /* Build configuration list for PBXNativeTarget "giVit WatchKit App" */;
-			buildPhases = (
-				FC01DDF3A69207797E7FEFEA /* [CP] Check Pods Manifest.lock */,
-				FAFE3B3520CC6E290077612E /* Resources */,
-				FAFE3B5A20CC6E2A0077612E /* Embed App Extensions */,
-				EEDDFB606206548BA1ACE147 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FAFE3B4920CC6E290077612E /* PBXTargetDependency */,
-			);
-			name = "giVit WatchKit App";
-			productName = "giVit WatchKit App";
-			productReference = FAFE3B3720CC6E290077612E /* giVit WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		FAFE3B4520CC6E290077612E /* giVit WatchKit Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FAFE3B5720CC6E2A0077612E /* Build configuration list for PBXNativeTarget "giVit WatchKit Extension" */;
-			buildPhases = (
-				FC0F0AEA5FECC929C1AAE051 /* [CP] Check Pods Manifest.lock */,
-				FAFE3B4220CC6E290077612E /* Sources */,
-				FAFE3B4320CC6E290077612E /* Frameworks */,
-				FAFE3B4420CC6E290077612E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "giVit WatchKit Extension";
-			productName = "giVit WatchKit Extension";
-			productReference = FAFE3B4620CC6E290077612E /* giVit WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -320,12 +189,6 @@
 				ORGANIZATIONNAME = EnggMomo;
 				TargetAttributes = {
 					FAFE3B2420CC6E270077612E = {
-						CreatedOnToolsVersion = 9.4;
-					};
-					FAFE3B3620CC6E290077612E = {
-						CreatedOnToolsVersion = 9.4;
-					};
-					FAFE3B4520CC6E290077612E = {
 						CreatedOnToolsVersion = 9.4;
 					};
 				};
@@ -344,8 +207,6 @@
 			projectRoot = "";
 			targets = (
 				FAFE3B2420CC6E270077612E /* giVit */,
-				FAFE3B3620CC6E290077612E /* giVit WatchKit App */,
-				FAFE3B4520CC6E290077612E /* giVit WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -359,23 +220,6 @@
 				FABEEC8620CC7612005527F3 /* GoogleService-Info.plist in Resources */,
 				FAFE3B3020CC6E290077612E /* Assets.xcassets in Resources */,
 				FAFE3B2E20CC6E270077612E /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAFE3B3520CC6E290077612E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAFE3B4020CC6E290077612E /* Assets.xcassets in Resources */,
-				FAFE3B3E20CC6E290077612E /* Interface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAFE3B4420CC6E290077612E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAFE3B5220CC6E2A0077612E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,42 +266,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FC01DDF3A69207797E7FEFEA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-giVit WatchKit App-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FC0F0AEA5FECC929C1AAE051 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-giVit WatchKit Extension-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -475,30 +283,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAFE3B4220CC6E290077612E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAFE3B5020CC6E290077612E /* NotificationController.swift in Sources */,
-				FAFE3B4E20CC6E290077612E /* ExtensionDelegate.swift in Sources */,
-				FAFE3B4C20CC6E290077612E /* InterfaceController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FAFE3B3A20CC6E290077612E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FAFE3B3620CC6E290077612E /* giVit WatchKit App */;
-			targetProxy = FAFE3B3920CC6E290077612E /* PBXContainerItemProxy */;
-		};
-		FAFE3B4920CC6E290077612E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FAFE3B4520CC6E290077612E /* giVit WatchKit Extension */;
-			targetProxy = FAFE3B4820CC6E290077612E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FAFE3B2C20CC6E270077612E /* Main.storyboard */ = {
@@ -517,17 +302,86 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		FAFE3B3C20CC6E290077612E /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAFE3B3D20CC6E290077612E /* Base */,
-			);
-			name = Interface.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FA3695FB20DF19C0004BD970 /* Dist */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Dist;
+		};
+		FA3695FC20DF19C0004BD970 /* Dist */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FF5E4C56E0CCD7C303B79B0 /* Pods-giVit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9RRMC8U5VD;
+				INFOPLIST_FILE = giVit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.givit.giVit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Dist;
+		};
 		FAFE3B5520CC6E2A0077612E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -579,7 +433,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -633,102 +487,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		FAFE3B5820CC6E2A0077612E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E3ABAE24B7BE9E978FB6049 /* Pods-giVit WatchKit Extension.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9RRMC8U5VD;
-				INFOPLIST_FILE = "giVit WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.givit.giVit.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.3;
-			};
-			name = Debug;
-		};
-		FAFE3B5920CC6E2A0077612E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79F8305D1CBF40F2EE4127C0 /* Pods-giVit WatchKit Extension.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9RRMC8U5VD;
-				INFOPLIST_FILE = "giVit WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.givit.giVit.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.3;
-			};
-			name = Release;
-		};
-		FAFE3B5C20CC6E2A0077612E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07AC350514DA62028E0813DC /* Pods-giVit WatchKit App.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9RRMC8U5VD;
-				IBSC_MODULE = giVit_WatchKit_Extension;
-				INFOPLIST_FILE = "giVit WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = app.givit.giVit.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.3;
-			};
-			name = Debug;
-		};
-		FAFE3B5D20CC6E2A0077612E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD3C0011BE6C21FD651957EB /* Pods-giVit WatchKit App.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9RRMC8U5VD;
-				IBSC_MODULE = giVit_WatchKit_Extension;
-				INFOPLIST_FILE = "giVit WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = app.givit.giVit.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.3;
 			};
 			name = Release;
 		};
@@ -786,36 +550,20 @@
 			buildConfigurations = (
 				FAFE3B5520CC6E2A0077612E /* Debug */,
 				FAFE3B5620CC6E2A0077612E /* Release */,
+				FA3695FB20DF19C0004BD970 /* Dist */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FAFE3B5720CC6E2A0077612E /* Build configuration list for PBXNativeTarget "giVit WatchKit Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FAFE3B5820CC6E2A0077612E /* Debug */,
-				FAFE3B5920CC6E2A0077612E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FAFE3B5B20CC6E2A0077612E /* Build configuration list for PBXNativeTarget "giVit WatchKit App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FAFE3B5C20CC6E2A0077612E /* Debug */,
-				FAFE3B5D20CC6E2A0077612E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Dist;
 		};
 		FAFE3B5F20CC6E2A0077612E /* Build configuration list for PBXNativeTarget "giVit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FAFE3B6020CC6E2A0077612E /* Debug */,
 				FAFE3B6120CC6E2A0077612E /* Release */,
+				FA3695FC20DF19C0004BD970 /* Dist */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Dist;
 		};
 /* End XCConfigurationList section */
 	};
