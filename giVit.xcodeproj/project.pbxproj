@@ -146,9 +146,9 @@
 			children = (
 				FAAC748220D5BC1A005B22A0 /* Components */,
 				FAAC747F20D5B787005B22A0 /* Helper Files */,
+				FAFAE56120CC79840005DCEC /* Screens */,
 				FABEEC8520CC7612005527F3 /* GoogleService-Info.plist */,
 				FAFE3B2820CC6E270077612E /* AppDelegate.swift */,
-				FAFAE56120CC79840005DCEC /* Screens */,
 				FAFE3B2C20CC6E270077612E /* Main.storyboard */,
 				FAFE3B2F20CC6E290077612E /* Assets.xcassets */,
 				FAFE3B3120CC6E290077612E /* LaunchScreen.storyboard */,
@@ -256,12 +256,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-giVit/Pods-giVit-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKeyboardManager/YYKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
