@@ -27,6 +27,11 @@ PODS:
     - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
   - FirebaseInstanceID (3.0.0):
     - FirebaseCore (~> 5.0)
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
+    - GoogleMaps/Base
   - GoogleToolboxForMac/Defines (2.1.4)
   - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
     - GoogleToolboxForMac/Defines (= 2.1.4)
@@ -41,6 +46,7 @@ DEPENDENCIES:
   - AppCenter
   - Firebase/Auth
   - Firebase/Core
+  - GoogleMaps
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -50,6 +56,7 @@ SPEC REPOS:
     - FirebaseAuth
     - FirebaseCore
     - FirebaseInstanceID
+    - GoogleMaps
     - GoogleToolboxForMac
     - GTMSessionFetcher
     - nanopb
@@ -61,10 +68,11 @@ SPEC CHECKSUMS:
   FirebaseAuth: acbeef02fe7c3a26624e309849f3fe30c84115af
   FirebaseCore: e46e4babb9de298fb2f736958edcc6da1dc60d73
   FirebaseInstanceID: 83e0040351565df711a5db3d8ebe5ea21aca998a
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
 
-PODFILE CHECKSUM: df4b2e4f663b337b0d0a78e757d03732a130e8fe
+PODFILE CHECKSUM: 1b2d4e56b8a452004b6aefcf2356663418a5bc67
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.5.3

@@ -9,5 +9,5 @@ target 'giVit' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'AppCenter'
-  
+  pod 'GoogleMaps'
 end
