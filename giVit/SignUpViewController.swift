@@ -8,15 +8,55 @@
 
 import UIKit
 import Firebase
+import YYKeyboardManager
 
-class SignUpViewController : UIViewController {
+var manager = YYKeyboardManager.default()
+var keyView = manager.keyboardView
+var keyWindow = manager.keyboardWindow
+var keyVis = manager.isKeyboardVisible
+var keyFrame = manager.keyboardFrame
+
+
+
+class SignUpViewController : UIViewController, YYKeyboardObserver {
     @IBOutlet weak var SignUpButton: CustomFullWidthButton!
     @IBOutlet weak var emailTextField: CustomInputTextField!
     @IBOutlet weak var passwordTextField: CustomInputTextField!
+
+    var diff : CGFloat = 0
     
     override func viewDidLoad() {
         self.styleView()
         self.addFunctionality()
+        
+        keyFrame = manager.convert(keyFrame, to: self.view)
+        manager.add(self)
+    }
+    
+    func keyboardChanged(with transition: YYKeyboardTransition) {
+        let fromFrame: CGRect = manager.convert(transition.fromFrame, to: self.view)
+        let toFrame: CGRect = manager.convert(transition.toFrame, to: self.view)
+        let fromVisible: Bool = transition.fromVisible.boolValue
+        let toVisible: Bool = transition.toVisible.boolValue
+        let animationDuration: TimeInterval = transition.animationDuration
+        let curve: UIViewAnimationCurve = transition.animationCurve
+        
+        
+        UIView.animate(withDuration: animationDuration, delay: 0, options: [], animations: {
+            () in
+            let bottomMostPoint = self.SignUpButton.frame.maxY + 20 // set padding
+            if (bottomMostPoint > toFrame.origin.y) {
+                self.diff = toFrame.origin.y - bottomMostPoint
+                self.SignUpButton.frame.origin.y += self.diff
+                self.emailTextField.frame.origin.y += self.diff
+                self.passwordTextField.frame.origin.y += self.diff
+            } else {
+                self.SignUpButton.frame.origin.y -= self.diff
+                self.emailTextField.frame.origin.y -= self.diff
+                self.passwordTextField.frame.origin.y -= self.diff
+            }
+        })
+        print("fromFrame: \(fromFrame),\ntoFrame: \(toFrame),\nfromVisible: \(fromVisible),\ntoVisible: \(toVisible),\nanimationDuriation: \(animationDuration)\n")
     }
     
     func styleView() {
@@ -27,26 +67,8 @@ class SignUpViewController : UIViewController {
         return UIStatusBarStyle.lightContent
     }
     
-    @objc func keyboardWillShow(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-            if self.view.frame.origin.y == 0{
-                self.view.frame.origin.y -= (keyboardSize.height-(self.view.frame.height-SignUpButton.frame.maxY-10)).rounded()
-            }
-        }
-    }
-    
-    @objc func keyboardWillHide(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-            if self.view.frame.origin.y != 0{
-                self.view.frame.origin.y = 0
-            }
-        }
-    }
-    
     func addFunctionality() {
         self.hideKeyboardWhenTappedAround()
-        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         self.SignUpButton.setupButton(
             sender: self,
             y: self.SignUpButton.frame.minY,

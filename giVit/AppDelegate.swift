@@ -7,17 +7,26 @@
 //
 
 import UIKit
+
 import Firebase
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
+
+import GoogleMaps
+
+let googleApiKey = "AIzaSyDVyMMmCQ9pGJ_8diU2rVjv7YHystlIQyY"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure();
+        MSAppCenter.start("eeb65998-adcd-4778-bd72-da531f5240ec", withServices: [MSAnalytics.self, MSCrashes.self]);
+        GMSServices.provideAPIKey(googleApiKey);
         return true
     }
 
