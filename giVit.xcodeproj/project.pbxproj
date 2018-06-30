@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CD3B21620E84AD6003E4119 /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CD3B21520E84AD6003E4119 /* Navigation.storyboard */; };
+		6CD3B21820E84B1F003E4119 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD3B21720E84B1F003E4119 /* NavigationViewController.swift */; };
 		9A6620CDECE13B44653FE59F /* Pods_giVit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4CA107B59D32E48FCF8D56 /* Pods_giVit.framework */; };
 		FA115A1C20D61B91008D7C2B /* CustomInputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA115A1B20D61B91008D7C2B /* CustomInputTextField.swift */; };
 		FA115A1E20D64E51008D7C2B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA115A1D20D64E51008D7C2B /* SignUpViewController.swift */; };
@@ -40,6 +42,8 @@
 		2822D20473344B8C2F2F2C3E /* Pods-giVit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giVit.release.xcconfig"; path = "Pods/Target Support Files/Pods-giVit/Pods-giVit.release.xcconfig"; sourceTree = "<group>"; };
 		36B325A53A7FFB99733D8743 /* Pods_giVit_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_giVit_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C2E0DC19D314FE2664708F2 /* Pods-giVit.dist.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giVit.dist.xcconfig"; path = "Pods/Target Support Files/Pods-giVit/Pods-giVit.dist.xcconfig"; sourceTree = "<group>"; };
+		6CD3B21520E84AD6003E4119 /* Navigation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Navigation.storyboard; sourceTree = "<group>"; };
+		6CD3B21720E84B1F003E4119 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		79F8305D1CBF40F2EE4127C0 /* Pods-giVit WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giVit WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-giVit WatchKit Extension/Pods-giVit WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		7E3ABAE24B7BE9E978FB6049 /* Pods-giVit WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-giVit WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-giVit WatchKit Extension/Pods-giVit WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		8B4CA107B59D32E48FCF8D56 /* Pods_giVit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_giVit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +123,7 @@
 				FAFE3B2A20CC6E270077612E /* LoadingViewController.swift */,
 				FAFAE56220CC884F0005DCEC /* LoginViewController.swift */,
 				FA115A1D20D64E51008D7C2B /* SignUpViewController.swift */,
+				6CD3B21720E84B1F003E4119 /* NavigationViewController.swift */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 				FABEEC8520CC7612005527F3 /* GoogleService-Info.plist */,
 				FAFE3B2820CC6E270077612E /* AppDelegate.swift */,
 				FAFE3B2C20CC6E270077612E /* Main.storyboard */,
+				6CD3B21520E84AD6003E4119 /* Navigation.storyboard */,
 				FAFE3B2F20CC6E290077612E /* Assets.xcassets */,
 				FAFE3B3120CC6E290077612E /* LaunchScreen.storyboard */,
 				FAFE3B3420CC6E290077612E /* Info.plist */,
@@ -221,6 +227,7 @@
 			files = (
 				FAFE3B3320CC6E290077612E /* LaunchScreen.storyboard in Resources */,
 				FABEEC8620CC7612005527F3 /* GoogleService-Info.plist in Resources */,
+				6CD3B21620E84AD6003E4119 /* Navigation.storyboard in Resources */,
 				FAFE3B3020CC6E290077612E /* Assets.xcassets in Resources */,
 				FAFE3B2E20CC6E270077612E /* Main.storyboard in Resources */,
 			);
@@ -296,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CD3B21820E84B1F003E4119 /* NavigationViewController.swift in Sources */,
 				FAFAE56320CC884F0005DCEC /* LoginViewController.swift in Sources */,
 				FA115A1E20D64E51008D7C2B /* SignUpViewController.swift in Sources */,
 				FA115A1C20D61B91008D7C2B /* CustomInputTextField.swift in Sources */,

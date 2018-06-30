@@ -98,11 +98,20 @@
                         <outlet property="SignUpButton" destination="R1r-VY-0ki" id="USZ-8n-tha"/>
                         <outlet property="emailTextField" destination="QCa-ac-aCb" id="7ms-UU-uLm"/>
                         <outlet property="passwordTextField" destination="3bL-bL-9B4" id="UCO-aW-MQT"/>
+                        <segue destination="XZk-Dk-CEI" kind="show" id="ISE-V5-yOZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n9E-uu-olC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="709.29535232383819"/>
+        </scene>
+        <!--Navigation-->
+        <scene sceneID="hw8-dO-l23">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Navigation" id="XZk-Dk-CEI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DcI-NY-LVD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="736" y="322"/>
         </scene>
     </scenes>
 </document>
