@@ -8,15 +8,39 @@
 
 import UIKit
 import Firebase
+import YYKeyboardManager
 
-class LoginViewController : UIViewController {
+class LoginViewController : UIViewController, YYKeyboardObserver {
     @IBOutlet weak var LoginButton: CustomFullWidthButton!
     @IBOutlet weak var emailTextField: CustomInputTextField!
     @IBOutlet weak var passwordTextField: CustomInputTextField!
     
+    var diff : CGFloat = 0
+    
     override func viewDidLoad() {
         self.styleView()
         self.addFunctionality()
+    }
+    
+    
+    func keyboardChanged(with transition: YYKeyboardTransition) {
+        let toFrame: CGRect = manager.convert(transition.toFrame, to: self.view)
+        let animationDuration: TimeInterval = transition.animationDuration
+        
+        UIView.animate(withDuration: animationDuration, delay: 0, options: [], animations: {
+            () in
+            let bottomMostPoint = self.LoginButton.frame.maxY + 20 // set padding
+            if (bottomMostPoint > toFrame.origin.y) {
+                self.diff = toFrame.origin.y - bottomMostPoint
+                self.LoginButton.frame.origin.y += self.diff
+                self.emailTextField.frame.origin.y += self.diff
+                self.passwordTextField.frame.origin.y += self.diff
+            } else {
+                self.LoginButton.frame.origin.y -= self.diff
+                self.emailTextField.frame.origin.y -= self.diff
+                self.passwordTextField.frame.origin.y -= self.diff
+            }
+        })
     }
     
     func styleView(){
@@ -28,6 +52,8 @@ class LoginViewController : UIViewController {
     }
     
     func addFunctionality(){
+        keyFrame = manager.convert(keyFrame, to: self.view)
+        manager.add(self)
         self.hideKeyboardWhenTappedAround()
         self.LoginButton.setupButton(
             sender: self,

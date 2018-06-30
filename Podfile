@@ -11,4 +11,5 @@ target 'giVit' do
   pod 'AppCenter'
   pod 'GoogleMaps'
   pod 'YYKeyboardManager'
+  
 end

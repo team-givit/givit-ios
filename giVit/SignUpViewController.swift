@@ -10,12 +10,6 @@ import UIKit
 import Firebase
 import YYKeyboardManager
 
-var manager = YYKeyboardManager.default()
-var keyView = manager.keyboardView
-var keyWindow = manager.keyboardWindow
-var keyVis = manager.isKeyboardVisible
-var keyFrame = manager.keyboardFrame
-
 
 
 class SignUpViewController : UIViewController, YYKeyboardObserver {
@@ -28,19 +22,11 @@ class SignUpViewController : UIViewController, YYKeyboardObserver {
     override func viewDidLoad() {
         self.styleView()
         self.addFunctionality()
-        
-        keyFrame = manager.convert(keyFrame, to: self.view)
-        manager.add(self)
     }
     
     func keyboardChanged(with transition: YYKeyboardTransition) {
-        let fromFrame: CGRect = manager.convert(transition.fromFrame, to: self.view)
         let toFrame: CGRect = manager.convert(transition.toFrame, to: self.view)
-        let fromVisible: Bool = transition.fromVisible.boolValue
-        let toVisible: Bool = transition.toVisible.boolValue
         let animationDuration: TimeInterval = transition.animationDuration
-        let curve: UIViewAnimationCurve = transition.animationCurve
-        
         
         UIView.animate(withDuration: animationDuration, delay: 0, options: [], animations: {
             () in
@@ -56,11 +42,10 @@ class SignUpViewController : UIViewController, YYKeyboardObserver {
                 self.passwordTextField.frame.origin.y -= self.diff
             }
         })
-        print("fromFrame: \(fromFrame),\ntoFrame: \(toFrame),\nfromVisible: \(fromVisible),\ntoVisible: \(toVisible),\nanimationDuriation: \(animationDuration)\n")
     }
     
     func styleView() {
-        self.view.backgroundColor = UIColor(hex: 0xFFDE00)
+        self.view.backgroundColor = UIColor(hex: 0x454545)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -68,6 +53,8 @@ class SignUpViewController : UIViewController, YYKeyboardObserver {
     }
     
     func addFunctionality() {
+        keyFrame = manager.convert(keyFrame, to: self.view)
+        manager.add(self)
         self.hideKeyboardWhenTappedAround()
         self.SignUpButton.setupButton(
             sender: self,
@@ -77,16 +64,20 @@ class SignUpViewController : UIViewController, YYKeyboardObserver {
             onPress:
             {
                 [unowned self] in
-                print("Button Level 1")
-                Auth.auth().createUser(
+                AuthState.auth.createUser(
                     withEmail: self.emailTextField.text!,
                     password: self.passwordTextField.text!,
                     completion:
                     {
                         (user, error) in
-                        print("Button Level 2")
-                        print(user)
-                        print(error)
+                        if (user != nil){
+                            // this means that the user has been successfully logged in
+                            
+                        }else{
+                            // TODO: implement error checking and let user know if something is wrong
+                            print(error)
+                        }
+                        
                 }
                 )
             }
